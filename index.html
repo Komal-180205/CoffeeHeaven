@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coffee Heaven</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header style="background-color: #684518">
+    <h1 style="text-align: centers;" >Coffee Heaven</h1>
+    <nav >
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#" id="cartBtn">Cart🛒</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="cart" class="cart-popup hidden">
+    <h3>Your Cart</h3>
+    <ul id="cartItems"></ul>
+    <p>Total: ₹<span id="totalPrice">0</span></p>
+    <button onclick="checkout()">Checkout</button>
+</section>
+
+
+  <section class="hero">
+    <h2>Your Daily Dose of Caffeine</h2>
+    <p>Freshly brewed happiness, delivered to your door.</p>
+  </section>
+
+  <section id="products">
+  <h1 style="padding-left: 30px; margin-top: 0px;margin-bottom: 0px; padding-top: 20px; padding-bottom: 0px; color: black;">Our Coffees</h1>
+
+  <div class="category-section">
+    <h3 style="padding-left: 20px;">Hot Coffees</h3>
+    <div class="product-list" id="hot"></div>
+  </div>
+
+  <div class="category-section">
+    <h3 style="padding-left: 20px;">Iced Coffees</h3>
+    <div class="product-list" id="iced"></div>
+  </div>
+
+  <div class="category-section">
+    <h3 style="padding-left: 20px;">Special Coffees</h3>
+    <div class="product-list" id="special"></div>
+  </div>
+  </section>
+
+  <section id="cart" class="hidden">
+    <h2>Your Cart</h2>
+    <ul id="cartItems"></ul>
+    <p>Total: ₹<span id="totalPrice">0</span></p>
+    <button onclick="checkout()">Checkout</button>
+  </section>
+
+  <footer>
+    <p>© 2025 Coffee Heaven | Made with ❤️ by Komal</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <div id="popup-message">Added to Cart !</div>
+</body>
+</html>
